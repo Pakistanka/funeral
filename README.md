@@ -17,7 +17,7 @@
 * Redux
 
 Для развертывания проекта локально необходимо введите в терминале команду:<br>
-`git clone https://gitlab.com/anastasia_bond/all_funeral`<br>
+`git clone https://github.com/Pakistanka/funeral.git`<br>
 Далее для установки зависимостей введите:<br>
 `npm install`<br>
 Для статического анализатора кода введите в терминале команду:<br>

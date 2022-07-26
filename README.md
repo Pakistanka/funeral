@@ -1,29 +1,24 @@
 # All Funeral Service
-Веб приложение представляет собой реализацию тестового задания для AFS.<br>
+This web app is a test task for the All Funeral Service<br>
 
-В соответствии с заданием интерфейс должен уметь:
-* отображать данные, полученные из API
-* отправлять к API запрос на редактирование данных карточки
-* отображать обновленные данные после успешного редактирования
-* загружать/удалять приложенные картинки
-* отправлять запрос на удаление карточки
+## The interface can:
+* show dateproviding from API
+* send orders to API to edit, delete and update the cardи
 
 
-Для реализации проекта использовался следующий стек технологий:
+## Technologies:
 * HTML
 * CSS
 * TypeScript
 * React
 * Redux
 
-Для развертывания проекта локально необходимо введите в терминале команду:<br>
+Fot starting the project, please, type the following command in your terminal:<br>
 `git clone https://github.com/Pakistanka/funeral.git`<br>
-Далее для установки зависимостей введите:<br>
+Then install dependencies:<br>
 `npm install`<br>
-Для статического анализатора кода введите в терминале команду:<br>
+To analyse the code:<br>
 `npm run lint`<br>
-Для запуска приложения на [http://localhost:3000](http://localhost:3000) введите в терминале команду:<br>
+To launch the app [http://localhost:3000](http://localhost:3000):<br>
 `npm run start`<br>
-Для размещения приложения на Github Pages введите в терминале команду:<br>
-`npm run deploy`
 

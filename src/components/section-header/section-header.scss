@@ -1,0 +1,27 @@
+.header-wrapper{
+  display: flex;
+  flex-direction: row;
+  margin-top: 24px;
+
+  &__title {
+    color: #3b3b3b;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+}
+
+
+.icon-wrapper {
+  height: fit-content;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.edit {
+  fill:#82b284;
+  &:hover {
+    fill: darken(#82b284, 20%);
+  }
+}

@@ -1,24 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import { companyId } from './api';
+import { getCompanyThunk } from './redux/actions/company-actions';
+import { useAppDispatch, useAppSelector } from './services/hooks';
+import CommonInformation from './components/common-information/common-information';
+import Contacts from './components/contacts/contacts';
+import PhotosSection from './components/photos-section/photos-section';
+
+import './app.scss';
+
+import Header from './components/header/header';
+import Aside from './components/aside/aside';
+import Footer from './components/footer/footer';
+import DeleteModal from './components/delete-modal/delete-modal';
+import ShortNameSection from './components/short-name-section/short-name-section';
 
 function App() {
+  const dispatch = useAppDispatch();
+  const { isDeleteModal } = useAppSelector((store) => store.appState);
+
+  useEffect(() => {
+    dispatch(getCompanyThunk(companyId));
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper">
+      <main>
+        <Aside />
+        <div className="content-wrapper">
+          <Header />
+          <div className="information">
+            <ShortNameSection />
+            <CommonInformation />
+            <Contacts />
+            <PhotosSection />
+          </div>
+        </div>
+      </main>
+      <Footer/>
+      {isDeleteModal && <DeleteModal />}
     </div>
   );
 }

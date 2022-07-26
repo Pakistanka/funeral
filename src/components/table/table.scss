@@ -1,0 +1,16 @@
+.table {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  row-gap: 12px;
+  margin: 20px 0 32px;
+  color:rgba(59, 59, 59, 1);
+  font-size: 14px;
+  line-height: 22px;
+
+  &__title {
+    font-weight: 300;
+  }
+  &__value {
+    font-weight: 400;
+  }
+}

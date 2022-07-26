@@ -1,0 +1,28 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: calc(100% - 272px);
+    text-align: center;
+    padding: 32px 0px 46px;
+    margin-left: auto;
+    gap: 22px;
+
+    &__text,
+    &__tel {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: #B9B9B9;
+    }
+
+    &__tel {
+      text-decoration: none;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: #82B284;
+      }
+    }
+  }

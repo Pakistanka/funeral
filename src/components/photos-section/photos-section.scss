@@ -1,0 +1,22 @@
+.photoes {
+  padding: 0 0 40px 0;
+  border-bottom: 1px solid #E5E5E5;
+
+  &__wrap  {
+    margin: 20px 0 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  &__form {
+    margin-bottom: 15px;
+  }
+
+  &__actions  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+

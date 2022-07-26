@@ -1,0 +1,33 @@
+.photo {
+  position: relative;
+  width: max-content;
+  border-radius: 2px;
+  overflow: hidden;
+  margin: 0px;
+
+  &__icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+  }
+
+  &__figcaption {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name,
+  &__date {
+    font-size: 12px;
+    line-height: 16px;
+    color: #3B3B3B;
+    margin-top: 8px;
+  }
+
+  &__date {
+    color: #808080;
+    margin-top: 4px;
+  }
+}
+

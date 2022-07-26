@@ -1,0 +1,39 @@
+.button {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 400px;
+  height: 40px;
+  border: 1px solid #E5E5E5;
+  border-radius: 2px;
+  outline: none;
+  background-color: white;
+  cursor: pointer;
+
+  font-family: 'Noto Sans';
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #82B284;
+
+  &:hover {
+    color: #98C88C
+  }
+  &:active {
+    color: #58A742;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translate(0%, -50%);
+
+    & img {
+      display: block;
+    }
+  }
+
+};

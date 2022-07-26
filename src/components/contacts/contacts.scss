@@ -1,0 +1,12 @@
+.contacts {
+  border-bottom: 1px solid #E5E5E5;
+
+  &__email {
+    color: #81b183;
+    text-decoration: none;
+
+    &:hover {
+      color: darken(#81b183, 20%);
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.common {
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.infoWrapper {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  row-gap: 12px;
+  margin: 20px 0 32px;
+  color:rgba(59, 59, 59, 1);
+  font-size: 0.875em;
+}
+
+.itemTitle {
+  font-weight: 300;
+}
+
+.itemValue {
+  font-weight: 400;
+}
+.modalWrapper {
+  width: 100%;
+}
+
+.modalActions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

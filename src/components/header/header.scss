@@ -1,0 +1,56 @@
+$horizontal-indent: 40px;
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  height: 72px;
+  padding: 0 $horizontal-indent;
+  color: rgb(130, 178, 132);
+  border-bottom: 1px solid #E5E5E5;
+
+  &__backwrapper {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    align-items: center;
+    &:hover {
+      color: darken(#82b284, 20%);
+    }
+  }
+  &__arrow {
+    display: block;
+    margin-right: 18px;
+    fill:#82b284;
+  }
+  &__controls {
+    display: flex;
+    flex-direction: row;
+    gap: 28px
+  }
+  &__element {
+    cursor: pointer;
+  }
+}
+
+.trash {
+  fill: #d95151;
+
+  &:hover {
+    fill: darken(#d95151, 20%);
+  }
+}
+
+.rotation,
+.linked {
+  fill:#82b284;
+  &:hover {
+    fill: darken(#82b284, 20%);
+  }
+}
+
+.header__backwrapper:hover .header__arrow {
+  fill: darken(#82b284, 20%);
+}

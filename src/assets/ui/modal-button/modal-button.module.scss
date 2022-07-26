@@ -1,0 +1,21 @@
+.modalButton {
+  font-weight: 600;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.accept {
+  color: #82B284;
+
+  &:hover {
+    color: #98C88C
+  }
+  &:active {
+    color: #58A742;
+  }
+}
+
+.decline {
+  color: #B9B9B9;
+}

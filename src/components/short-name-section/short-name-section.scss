@@ -1,0 +1,25 @@
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &__header {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222222;
+
+  }
+}
+
+.iconWrapper {
+  margin-left: 17px;
+  cursor: pointer;
+}
+
+.edit {
+  fill:#82b284;
+  &:hover {
+    fill: darken(#82b284, 20%);
+  }
+}
